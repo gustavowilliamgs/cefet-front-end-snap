@@ -82,3 +82,22 @@ Referência: https://www.html5rocks.com/en/tutorials/file/dndfiles/
 Pode acontecer de o balãozinho ficar "piscando" quando você movimenta o mouse em cima da região anotada. Isso acontece porque o navegador entende que ora o mouse está em cima da região anotada, ora ele está em cima do balãozinho - e isso alterna muitas vezes por segundo.
 
 Uma forma de evitar isso é posicionar o balãozinho a uma certa distância do mouse, em vez de exatamente na posição dele. Outra forma é falar que a `<div id="balaozinho">...</div>` não "responde" a eventos de mouse. É possível fazer isso bem facilmente com uma propriedade CSS no `#balaozinho`: `pointer-events: none`.
+
+### Como altero uma propriedade CSS de um elemento dinamicamente?
+
+Há 2 formas, sendo uma delas colocando e tirando classes, e a outra [alterando a propriedades CSS diretamente](https://fegemo.github.io/cefet-front-end/classes/js3/#estilizando-elementos-dinamicamente).
+
+
+### Como fazer sombras em CSS?
+
+Existe a propriedade `box-shadow`. Ela funciona assim:
+
+```css
+div {
+  box-shadow: 4px 4px 4px silver;
+}
+```
+
+O primeiro valor é o deslocamento horizontal da sombra (positivo vai para a direita), o segundo é o vertical (positivo vai para baixo), o terceiro é o quanto a sombra está "borrada" (para uma borda suave, coloque algo diferente de `0`) e o quarto é a cor da sombra.
+
+A cor da sombra, tipicamente, colocamos uma cor semitransparente (_e.g._, `rgba(...., 0.2)`).
