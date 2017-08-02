@@ -2,13 +2,26 @@
 
 Uma ferramenta para marcar suas fotos!
 
+![](img/resultado-final.png)
+
 ## Atividade
 
 Você deve modificar a página para que ela mostre duas marcações (~~pokémons~~) na imagem (~~foto~~). Cada marcação é definida por uma região retangular que começa do canto superior esquerdo (é o `(0, 0)`) e possui um título e um conteúdo, que devem ser exibidos em um balãozinho quando o usuário passar o mouse sobre cada uma.
 
-### Exercício 1: Conteúdo do balãozinho
+### Exercício 1: Alterar/remover conteúdo do balãozinho
 
-Crie um código JavaScript (_e.g._, `balaozinho.js`) que, para cada região anotada (`.regiao-anotada`), faz com que o conteúdo do balãozinho (_i.e._, `#balaozinho`) altere para algo como:
+Crie um código JavaScript (_e.g._, `balaozinho.js`) que, para cada região anotada (`.regiao-anotada`, cada quadradinho dentro da imagem), define o conteúdo do elemento `#balaozinho` (lembre-se [como definir o conteúdo de um elemento HTML][inner-html]) com uma string qualquer.
+
+Você deve atrelar os devidos eventos de mouse **a cada¹** `.regiao-anotada` para que:
+
+1. quando o **mouse entrar no quadradinho**, definir o conteúdo do `#balaozinho` como uma string qualquer
+1. quando o **mouse sair do quadradinho**, definir o conteúdo como uma string vazia
+
+¹ No momento existem duas `.regiao-anotada`s, mas pode ser que existam muitas outras, ou até nenhuma. Como [selecionar vários elementos do DOM][selecionar-varios]?
+
+### Exercício 2: Definir título/conteúdo correto do balãozinho
+
+Agora, você deve substituir a "string qualquer" com um trecho HTML que contenha o título e o conteúdo da região anotada, tipo assim:
 
 ```html
 <div class="balaozinho">  
@@ -17,7 +30,16 @@ Crie um código JavaScript (_e.g._, `balaozinho.js`) que, para cada região anot
 </div>
 ```
 
-Cada `.regiao-anotada` é uma `<div></div>` com posicionamento `absolute` e estilizada com bordas e um fundo semitransparente. Elas possuem dois atributos "personalizados" (vá lá no HTML e veja): um dele chama `data-titulo="..."` e armazena o título daquela região marcada e o outro chama `data-conteudo="..."` e armazena o texto que deve ir dentro do parágrafo do balãozinho.
+Cada `.regiao-anotada` é uma `<div></div>` devidamente estilizada e ela está assim:
+
+```html
+<div class="regiao-anotada"
+  data-titulo="Electrode"
+  data-conteudo="Este é uma pseudo-pokébola invertida"
+  style="width: 20px; height: 20px; top: 10px; left: 40px;"></div>
+```
+
+Elas possuem dois atributos "personalizados": um deles chama `data-titulo="..."` e armazena o título daquela região marcada e o outro chama `data-conteudo="..."` e armazena o texto que deve ir dentro do parágrafo do balãozinho.
 
 Na verdade, nós podemos usar atributos que não existem no HTML para nossos próprios propósitos. Basta colocar `data-novoatributo` em um elemento (_data_ em inglês = dados em português).
 
@@ -32,7 +54,7 @@ console.log(algumEl.dataset.dikentinha);
 // imprime "um texto" no console
 ```
 
-### Exercício 2: Formatação do balãozinho
+### Exercício 3: Formatação do balãozinho
 
 Estilize o `#balaozinho` para que ele se pareça com um balãozinho mesmo. Sugestões:
 
@@ -45,13 +67,13 @@ Estilize o `#balaozinho` para que ele se pareça com um balãozinho mesmo. Suges
 
 Além disso, faça com que o mouse fique com o `cursor` de `help` (mostra uma interrogação em vez da setinha) quando em uma `.regiao-anotada`.
 
-### Exercício 3: Posicionamento do balãozinho
+### Exercício 4: Posicionamento do balãozinho
 
-Faça com que, quando o mouse se movimente dentro de uma `.regiao-anotada`, o `#balaozinho` se posicione nas mesmas coordenadas que o mouse.
+Faça com que, quando o mouse se movimente dentro de uma `.regiao-anotada`, o `#balaozinho` se posicione nas mesmas coordenadas que o mouse. Veja como [pegar a posição do mouse][posicao-mouse] nos slides.
 
 Se acontecer do balãozinho ficar "piscando" ao mexer o mouse, veja o FAQ sobre como consertar.
 
-### Exercício 4: Definição da 1ª marcação
+### Exercício 5: Definição da 1ª marcação
 
 Faça com que o usuário possa definir as propriedades da 1ª região anotada (`left, top, width, height`) a partir dos campos `input` à direita.
 
@@ -101,3 +123,8 @@ div {
 O primeiro valor é o deslocamento horizontal da sombra (positivo vai para a direita), o segundo é o vertical (positivo vai para baixo), o terceiro é o quanto a sombra está "borrada" (para uma borda suave, coloque algo diferente de `0`) e o quarto é a cor da sombra.
 
 A cor da sombra, tipicamente, colocamos uma cor semitransparente (_e.g._, `rgba(...., 0.2)`).
+
+
+[inner-html]: https://fegemo.github.io/cefet-front-end/classes/js2/#alterando-o-conteudo
+[selecionar-varios]: https://fegemo.github.io/cefet-front-end/classes/js2/#selecionando-varios-elementos
+[posicao-mouse]: https://fegemo.github.io/cefet-front-end/classes/js3/#posicao-mouse
