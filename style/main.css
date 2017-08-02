@@ -66,7 +66,7 @@ main {
   cada região anotada e cada anotação (balãozinho) estão posicionadas de
   forma absoluta dentro da .foto-anotada
 */
-.regiao-anotada,
+.marcacao,
 #balaozinho {
   position: absolute;
 }
@@ -76,7 +76,7 @@ main {
   outline também, que é similar à borda, para conseguir fazer 2 cores) e
   com um fundo semitransparente
 */
-.regiao-anotada {
+.marcacao {
   border: 1px solid black;
   outline: 1px solid white;
   background-color: rgba(255, 255, 255, 0.2);
