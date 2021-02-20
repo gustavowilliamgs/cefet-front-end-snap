@@ -53,6 +53,14 @@ main {
   margin-bottom: 0.25em;
 }
 
+.controles button:last-of-type {
+  margin-bottom: 2em;
+}
+
+.controles button + label {
+  flex-direction: column;
+}
+
 /*
   coloca posição relativa para a div que contém a foto anotada
   de forma que as anotações dentro dela fiquem posicionadas
@@ -80,7 +88,6 @@ main {
   border: 1px solid black;
   outline: 1px solid white;
   background-color: rgba(255, 255, 255, 0.2);
-  transition: all 200ms ease;
 }
 
 /*
@@ -89,4 +96,15 @@ main {
 .foto-anotada img {
   box-shadow: 0px 4px 4px rgba(0,0,0,.2);
   border: 1px solid #666;
+  max-width: 75vw;
+}
+
+
+#balaozinho {
+  padding: 0.75em;
+  background-color: #0006;
+  border: 1px solid silver;
+  font-size: .8em;
+  color: white;
+  border-radius: 5px;
 }
