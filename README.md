@@ -2,7 +2,7 @@
 
 Uma ferramenta para marcar suas fotos!
 
-![](img/resultado-final.png)
+![](https://fegemo.github.io/cefet-front-end-large-assets/apng/resultado-final.png)
 
 ## Atividade
 
@@ -13,7 +13,7 @@ um balãozinho quando o usuário passar o mouse sobre cada uma.
 
 ### Exercício 1: Alterar/remover conteúdo do balãozinho
 
-![Resultado da realização do exercício 1](img/exercicio-1.png)
+![Resultado da realização do exercício 1](https://fegemo.github.io/cefet-front-end-large-assets/apng/exercicio-1.png)
 
 Crie um código JavaScript (_e.g._, `balaozinho.js`) que, para cada região
 anotada (`.marcacao`, cada quadradinho dentro da imagem), define o
@@ -26,7 +26,7 @@ para que (relembre os [eventos de mouse][eventos-de-mouse]):
 
 1. quando o **mouse entrar no quadradinho**, definir o conteúdo do
    `#balaozinho` como uma string qualquer
-1. quando o **mouse sair do quadradinho**, definir o conteúdo como
+2. quando o **mouse sair do quadradinho**, definir o conteúdo como
    uma string vazia
 
 Se acontecer do _balãozinho ficar "piscando"_ ao mexer o mouse, veja o [FAQ](#faq)
@@ -41,7 +41,7 @@ prática da exploração espacial. Lembre-se também de como
 
 ### Exercício 2: Formatação do balãozinho
 
-![Resultado da realização do exercício 2](img/exercicio-2.png)
+![Resultado da realização do exercício 2](https://fegemo.github.io/cefet-front-end-large-assets/apng/exercicio-2.png)
 
 Este é um **exercício de CSS** mesmo (não precisa fazer em JavaScript). Estilize o `#balaozinho` para que ele se pareça com um balãozinho mesmo.
 Sugestões:
@@ -61,7 +61,7 @@ em uma `.marcacao`. Isso pode ser feito em
 
 ### Exercício 3: Definir título/conteúdo correto do balãozinho
 
-![Resultado da realização do exercício 3](img/exercicio-3.png)
+![Resultado da realização do exercício 3](https://fegemo.github.io/cefet-front-end-large-assets/apng/exercicio-3.png)
 
 Agora, você deve substituir a "string qualquer" com um trecho HTML que
 contenha o título e o conteúdo da marcação, tipo assim:
@@ -121,7 +121,7 @@ console.log(algumEl.dataset.dikentinha);
 
 ### Exercício 4: Posicionamento do balãozinho
 
-![Resultado da realização do exercício 4](img/exercicio-4.png)
+![Resultado da realização do exercício 4](https://fegemo.github.io/cefet-front-end-large-assets/apng/exercicio-4.png)
 
 Faça com que, quando o mouse se movimente dentro de uma `.marcacao`,
 o `#balaozinho` se posicione nas mesmas coordenadas que o mouse. Veja
@@ -132,7 +132,7 @@ sobre o que aconteceu.
 
 ### Exercício 5: Definição da 1ª marcação
 
-![Resultado da realização do exercício 5](img/exercicio-5.png)
+![Resultado da realização do exercício 5](https://fegemo.github.io/cefet-front-end-large-assets/apng/exercicio-5.png)
 
 Faça com que o usuário possa definir as propriedades da 1ª marcação
 (`left, top, width, height`) a partir dos campos `input` à direita.
