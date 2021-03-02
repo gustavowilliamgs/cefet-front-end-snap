@@ -98,13 +98,3 @@ main {
   border: 1px solid #666;
   max-width: 75vw;
 }
-
-
-#balaozinho {
-  padding: 0.75em;
-  background-color: #0006;
-  border: 1px solid silver;
-  font-size: .8em;
-  color: white;
-  border-radius: 5px;
-}
