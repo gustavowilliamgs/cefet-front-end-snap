@@ -1,8 +1,11 @@
 # P~~oké~~hotoSnap
 
-Uma ferramenta para marcar suas fotos!
+Uma ferramenta para marcar suas fotos! Baixe o [código seminal][seminal].
 
 ![](https://fegemo.github.io/cefet-front-end-large-assets/apng/resultado-final.png)
+
+[seminal]: https://github.com/fegemo/cefet-front-end-snap/archive/main.zip
+
 
 ## Atividade
 
@@ -10,6 +13,7 @@ Você deve modificar a página para que ela mostre duas marcações
 (~~pokémons~~) na imagem (~~foto~~). Cada marcação é definida por um
 quadrado e possui um título e um conteúdo, que devem ser exibidos em
 um balãozinho quando o usuário passar o mouse sobre cada uma.
+
 
 ### Exercício 1: Alterar/remover conteúdo do balãozinho
 
@@ -38,6 +42,7 @@ outras, ou até nenhuma. Lembre-se de como
 [selecionar vários elementos do DOM][selecionar-varios]. Você fez isso na
 prática da exploração espacial. Lembre-se também de como 
 [associar eventos a elementos HTML][associar-eventos].
+
 
 ### Exercício 2: Formatação do balãozinho
 
@@ -110,12 +115,12 @@ Para acessar o valor desses atributos, usamos uma propriedade `dataset`
 do elemento HTML, assim:
 
 ```html
-<span data-dikentinha="um texto">Algum assunto</span>
+<span data-dikentinha="um certo texto">Algum assunto</span>
 ```
 ```js
 let algumEl = document.querySelector('....');
-console.log(algumEl.dataset.dikentinha);
-// imprime "um texto" no console
+let dikentinha = algumEl.dataset.dikentinha;
+// variável dikentinha contém "um certo texto"
 ```
 
 
@@ -129,6 +134,7 @@ como [pegar a posição do mouse][posicao-mouse] nos slides. Lembre-se:
 será necessário usar o [argumento de evento][argumento-de-evento],
 que é um parâmetro das _callbacks_ de evento e contém informações
 sobre o que aconteceu.
+
 
 ### Exercício 5: Definição da 1ª marcação
 
@@ -179,7 +185,9 @@ o coloca como uma imagem no lugar da foto dos pokémons.
 
 Referência: https://www.html5rocks.com/en/tutorials/file/dndfiles/
 
+
 ## FAQ
+
 
 ### Balãozinho piscando quando movimento o mouse
 
@@ -192,12 +200,14 @@ Uma forma de evitar isso é posicionar o balãozinho a uma certa distância
 do mouse, em vez de exatamente na posição dele. Outra forma é falar que
 a `<div id="balaozinho">...</div>` não "responde" a eventos de mouse.
 É possível fazer isso bem facilmente com uma propriedade CSS no
-`#balaozinho`: `pointer-events: none`.
+`#balaozinho`: propriedade `pointer-events` com valor `none`.
+
 
 ### Como altero uma propriedade CSS de um elemento dinamicamente?
 
 Há 2 formas, sendo uma delas colocando e tirando classes, e a outra
 [alterando a propriedades CSS diretamente][alterando-estilo-via-js].
+
 
 ### Como fazer sombras em CSS?
 
