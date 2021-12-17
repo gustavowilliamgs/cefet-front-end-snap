@@ -171,6 +171,10 @@ Uma ideia é: (1) ter uma variável global que aponta para a `marcacaoAtualEl`,
 (2) colocar eventos de `click` às marcações e, na _callback_ registrada, (3)
 atualizar o valor dessa variável para o elemento que foi alvo do evento.
 
+Além disso, se quiser indicar visualmente qual
+é a marcação selecionada, faça com que ela (e apenas ela)
+tenha a classe `.selecionada`.
+
 
 ### Desafio 3: Escolha da imagem (_hardcore!_ 💣💣💣)
 
